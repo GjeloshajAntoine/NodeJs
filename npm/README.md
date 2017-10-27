@@ -14,6 +14,7 @@
   ```
     > npm init
   ```
+  Npm vous demandera le nom et la version du projet.Les modules que vous installerez y seront ajouté à la liste au moment ou vous les installerez.
 
 - installer paquet localement
 
