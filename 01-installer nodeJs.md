@@ -1,4 +1,4 @@
-Comment installer Node.JS !?
+# Comment installer Node.JS !?
 
 Pour les personnes qui se trouvent sur Ubuntu :
 - Ouvrir le terminal.
