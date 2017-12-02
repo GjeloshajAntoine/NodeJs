@@ -1,4 +1,4 @@
-# Utiliser npm et les modules
+# Utiliser npm
 
   Npm est un gestionnaire de paquet  qui vous permettera d'installer des modules que vous pourrez utiliser avec Node.js
 
@@ -38,7 +38,13 @@
   ```
   Enlever ou rajouter ``` -g ``` selon que c'est un package global ou non.
 
+- utiliser un module
+  Les modules installés via les packets s'utilisent avec la fonction require.
+  ```
+  var utilisation= require("nom_du_module");
+  ```
+
 - npmjs.com
 
-  Le site [npmjs.com](https://www.npmjs.com/) est la source depuis laquelle npm télécharge tout les modules.Vous pouvez retrouver chercher tout le modules disponible;
+  Le site [npmjs.com](https://www.npmjs.com/) est la source depuis laquelle npm télécharge tout les modules.Vous pouvez retrouver chercher tout lse modules disponible;
   Et le lien de la doc: [npmjs.com](https://docs.npmjs.com/)
