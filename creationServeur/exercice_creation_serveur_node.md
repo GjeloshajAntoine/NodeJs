@@ -37,7 +37,7 @@ document html. Et enfin la "response.end()" va être appelée afin de signifier 
             <title>Document</title>
         </head>
         <body>
-        <p>Helooooow world</p>
+        <p>Hellooooow world</p>
         </body>
         </html>
     `);
