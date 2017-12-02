@@ -50,7 +50,7 @@ de notre choix.
 server.listen(8080);
 ```
 
-Il ne nous reste plus qu'a lancer notre serveur via le terminal grâce a ligne de commande ci-dessous 
+Il ne nous reste plus qu'a lancer notre serveur via le terminal grâce à ligne de commande ci-dessous 
 et à admirer notre magnifique message "hello world" à l'adresse :
 http://localhost:8080
 
