@@ -25,6 +25,7 @@ que l'on souhaite retourner. Ensuite "response.write()" va tout simplement, perm
 document html. Et enfin la "response.end()" va être appelée afin de signifier la fin de notre réponse.
 
 ```
+ response.writeHead(200, {"Content-Type": "text/html"});
  response.write(`
             <!doctype html>
         <html lang="en">
