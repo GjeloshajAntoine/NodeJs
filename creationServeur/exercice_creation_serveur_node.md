@@ -19,10 +19,10 @@ var server = http.createServer(function(request, response) {
 });
 ```
 
-Le but étant de renvoyer du contenu, ici seul l'objet response va nous intéresser.
-la méthode "response.writeHead()" va définir le statut de notre requête http ainsi que le type de contenu
-que l'on souhaite retourner. Ensuite "response.write()" va tout simplement, permettre de concevoir notre
-document html. Et enfin la "response.end()" va être appelée afin de signifier la fin de notre réponse.
+Le but étant de renvoyer du contenu, ici seul l'objet "response" va nous intéresser.La méthode "response.writeHead()" 
+va définir le statut de notre requête http ainsi que le type de contenu que l'on souhaite retourner. 
+Ensuite "response.write()" va tout simplement, permettre de concevoir notre document html. 
+Enfin la "response.end()" va être appelée afin de signifier la fin de notre réponse.
 
 ```
  response.writeHead(200, {"Content-Type": "text/html"});
@@ -34,7 +34,7 @@ document html. Et enfin la "response.end()" va être appelée afin de signifier 
             <title>Document</title>
         </head>
         <body>
-        <p>Hellooooow world</p>
+        <p>hello world</p>
         </body>
         </html>
     `);
