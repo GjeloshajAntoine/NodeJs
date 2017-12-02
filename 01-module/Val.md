@@ -13,7 +13,7 @@ Tout d’abbord il nous faut créer une page « app.js » sur laquelle  écrir
     return "HELLO";
   }
 ```
-une fois cela fait, il faut expliquer à l’ordianteur que nous voulons exporter cet element pour l’utiliser sur une autre page JS, que nous allons appeler ici « use.js »
+une fois cela fait, il faut expliquer à l’ordinateur que nous voulons exporter cet élément pour l’utiliser sur une autre page JS, que nous allons appeler ici « use.js »
 
 
 
@@ -34,9 +34,9 @@ module.exports.English= sayHelloInEnglish ;
 ## Etape 2, require
 
 maintenant que le module est exporté, il faut l’importer dans use.js.
-pour se faire, il suffit d’utiliser la méthode « require » dans le fichier use.js qui va aller chercher votre module et le rendre utilisable.
+pour ce faire, il suffit d’utiliser la méthode « require » dans le fichier use.js qui va aller chercher votre module et le rendre utilisable.
 
-Voici son mode d’emploi, premièrement la méthode doit être appélée dans une varible afin de pouvoir l’utiliser : 
+Voici son mode d’emploi, premièrement la méthode doit être appelée dans une variable afin de pouvoir l’utiliser : 
 ```
 var Something= require().
 ```
@@ -45,7 +45,7 @@ Puis il faut indiquer la position du module à la méthode require, tout comme l
 var Something= require(«app.js ») ;
 ```
 
-Et voila, votre fonction est importée, maintenant pour l’utiliser il vous suffit de l’appeler sous le nom de votre require plus le nom que vous avez donné à votre export (dans notre cas le Something et le English).
+Et voilà, votre fonction est importée, maintenant pour l’utiliser il vous suffit de l’appeler sous le nom de votre require plus le nom que vous avez donné à votre export (dans notre cas le Something et le English).
 
 Dans notre exemple : 
 
@@ -57,7 +57,7 @@ console.log(Something.English ()) // va nous logger HELLO ;
 
 ### Pourquoi devoir donner un nom à notre export ?
 
-Très souvant dans des modules, il n’y a pas qu’un seul élément, il faut donc donner un nom à nos différents éléments pour pouvoir les utiliser, par exemple :
+Très souvent dans des modules, il n’y a pas qu’un seul élément, il faut donc donner un nom à nos différents éléments pour pouvoir les utiliser, par exemple :
 
 ```
 var sayHelloInEnglish= function() {
@@ -81,7 +81,7 @@ console.log(Something.Spanish ()) // va nous logger Hola ;
 Et voilà.
 
 
-
+Pour plus d'info, n'hésitez pas à suivre le cours de net ninja, il est bien fait:
 
 
 https://www.youtube.com/watch?v=xHLd36QoS4k&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp&index=6
