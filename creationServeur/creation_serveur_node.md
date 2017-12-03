@@ -17,7 +17,7 @@ var http = require("http");
 
 Une fois le module "http" inclus dans notre fichier "server.js", nous aurons accès à la méthode
 "http.createServer()" qui comme son nom l'indique, nous permettra de créer notre serveur. Cette méthode
-va nous passer deux paramètres : les objets request et response.  
+va nous passer deux paramètres : les objets request et response: 
 
 ```
 var server = http.createServer(function(request, response) {
@@ -58,7 +58,7 @@ Et enfin "response.end()" viendra signifier la fin de notre réponse.
 
 La dernière méthode appelée dans notre fichier sera "server.listen()", qui va lier notre serveur au port 
 de notre choix. Ici nous utilisons le port 8080 mais comme mentionné juste avant, libre à vous d'utiliser un autre port afin 
-d'accéder votre seveur web :  
+d'accéder votre seveur web:  
 
 ```
 server.listen(8080);
