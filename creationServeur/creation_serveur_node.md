@@ -39,7 +39,6 @@ Et enfin "response.end()" viendra signifier la fin de notre réponse.
 
 ```
 response.writeHead(200, {"Content-Type": "text/html"});
-
 response.write(`
     <!doctype html>
     <html lang="en">
@@ -48,7 +47,7 @@ response.write(`
             <title>hello node</title>
         </head>
         <body>
-            <p>Helooooow world</p>
+            <p>Hello world</p>
         </body>
     </html>
 `);
@@ -76,15 +75,16 @@ node server.js
 ```
 var http = require("http");
 var server = http.createServer(function (request, response) {
+    response.writeHead(200, {"Content-Type": "text/html"});
     response.write(`
         <!doctype html>
         <html lang="en">
             <head>
                 <meta charset="UTF-8">
-                <title>hello node</title>
+                <title>mon server</title>
             </head>
             <body>
-                <p>Helooooow world</p>
+                <p>Hello world</p>
             </body>
         </html>
     `);
