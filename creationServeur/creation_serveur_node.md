@@ -33,7 +33,7 @@ Le but étant de communiquer du contenu à notre navigateur, ici seul l'objet "r
 
 La première étape consistera à appeler la méthode "response.writeHead()" qui va définir le statut de notre requête http ainsi que le type de contenu que l'on souhaite retourner.  
    
-Ensuite "response.write()" va tout simplement, permettre de concevoir notre document html passer en arguement.
+Ensuite "response.write()" va tout simplement, permettre de concevoir notre document html passé en arguement.
    
 Et enfin "response.end()" viendra signifier la fin de notre réponse.  
 
