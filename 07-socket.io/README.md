@@ -39,7 +39,6 @@
   ```
   
   3.Messages
-  
     Pour communiquer socketio utiliser des evenements,on peut d'un coté écouter un événement et le l'autre envoyer des messages à ces événements.
     On peut creer autant de type d'évenement que l'on veut mais aussi décider de n'en écouter que certain d'entre eux.
 
