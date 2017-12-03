@@ -39,21 +39,19 @@
   ```
   
   3.Messages
-      Pour communiquer socketio utiliser des evenements,on peut d'un coté écouter un événement et le l'autre envoyer des messages à ces événements.
-      On peut creer autant de type d'évenement que l'on veut mais aussi décider de n'en écouter que certain d'entre eux.
+  Pour communiquer socketio utiliser des evenements,on peut d'un coté écouter un événement et le l'autre envoyer des messages à ces événements.
+   On peut creer autant de type d'évenement que l'on veut mais aussi décider de n'en écouter que certain d'entre eux.
     
-      Pour envoyer un evenement de type bienvenu au client par exemple :
-      (coté serveur)
-    
-    
-     ```js
-     socket.emit("bienvenue","Bonjour ceci est votre 1ere connection");
-     ```
-     et pour le recevoir:(coté client)
-     ```js
-     socket.on('bienvenue', function (data) {
-       alert("le serveur nous dit :"+data);
-     });
-     ```
+   Pour envoyer un evenement de type bienvenu au client par exemple :(coté serveur)
+ 
+   ```js
+    socket.emit("bienvenue","Bonjour ceci est votre 1ere connection");
+    ```
+ et pour le recevoir:(coté client)
+  ```js
+  socket.on('bienvenue', function (data) {
+   alert("le serveur nous dit :"+data);
+  });
+  ```
 
-     L'inverse est aussi possible ou le client envoye un message , et le server écoute.
+   L'inverse est aussi possible ou le client envoye un message , et le server écoute.
