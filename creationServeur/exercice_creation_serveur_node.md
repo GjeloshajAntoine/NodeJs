@@ -1,28 +1,41 @@
 ### Créer un serveur web avec Nodejs 
 
-Nous allons d'abord créer un fichier nommé "server.js" et y inclure le module "http"
-compris dans Node:
+Dans ce chapitre, nous allons apprendre à créer notre propre serveur web grâce à bibliothèque node, afin de communiquer 
+du contenu à notre navigateur via les modules et méthodes que node nous propose. 
+
+
+## le module HTTP
+
+Pour commencer nous aurons besoin de créer un fichier nommé "server.js" et d'y inclure le module "http",
+qui nous donnera les outils nécessaires, pour communiquer avec le navigateur via le protocole HTTP (Hyper Text Transfer Protocol):  
 
 ```
 var http = require("http");
 ```
 
-Une fois le module "http" inclus dans notre fichier "server.js", nous aurons accès à la fonction
-"http.createServer()" qui comme son nom l'indique, nous permettra de créer notre premier serveur web. Cette fonction
-va nous passer deux paramètres : les objets: request et response.
+## createServer
 
-L'objet "request" va nous fournir des informations concernant la requête client tel que l'url, les en-têtes HTTP,...
-Tandis que l'objet "response" servira à retourner des données au côté client de notre app. 
+Une fois le module "http" inclus dans notre fichier "server.js", nous aurons accès à la méthode
+"http.createServer()" qui comme son nom l'indique, nous permettra de créer notre serveur. Cette méthode
+va nous passer deux paramètres : les objets request et response.  
 
 ```
 var server = http.createServer(function(request, response) {
 });
 ```
 
-Le but étant de renvoyer du contenu, ici seul l'objet "response" va nous intéresser.La méthode "response.writeHead()" 
-va définir le statut de notre requête http ainsi que le type de contenu que l'on souhaite retourner. 
-Ensuite "response.write()" va tout simplement, permettre de concevoir notre document html. 
-Enfin la "response.end()" va être appelée afin de signifier la fin de notre réponse.
+## Les objets Request et Response
+
+L'objet "request" va nous fournir des informations concernant la requête client tel que son url, les en-têtes HTTP,...
+Tandis que l'objet "response" servira à retourner des données comme du texte, du html, un fichier,... 
+
+Le but étant de communiquer du contenu à notre navigateur, ici seul l'objet "response" et quelques-unes de ces méthodes vont nous intéresser.  
+
+La première étape consistera à appeler la méthode "response.writeHead()" qui va définir le statut de notre requête http ainsi que le type de contenu que l'on souhaite retourner.  
+   
+Ensuite "response.write()" va tout simplement, permettre de concevoir notre document html passer en arguement.
+   
+Et enfin "response.end()" viendra signifier la fin de notre réponse.  
 
 ```
  response.writeHead(200, {"Content-Type": "text/html"});
@@ -40,21 +53,24 @@ Enfin la "response.end()" va être appelée afin de signifier la fin de notre r�
     `);
     response.end();
 ```
+
+## La méthode listen
+
 La dernière méthode appelée dans notre fichier sera "server.listen()", qui va lier notre serveur au port 
-de notre choix.
+de notre choix. Ici nous utilisons le port 8080 mais comme mentionné juste avant, libre à vous d'utiliser un autre port afin 
+d'accéder votre seveur web :  
 
 ```
 server.listen(8080);
 ```
-
-Il ne nous reste plus qu'a lancer notre serveur via le terminal grâce à ligne de commande ci-dessous 
-et à admirer notre magnifique message "hello world" à l'adresse :
-http://localhost:8080
+  
+Et voilà, Il ne nous reste plus qu'à la démarrer notre serveur via le terminal grâce à ligne de commande ci-dessous 
+et à admirer notre magnifique message "hello world" à l'adresse suivante: http://localhost:8080
 
 ```
 node server.js
 ```
 
 
-Liens Utile(s) :  
+Liens utile pour de plus amples informations concernant le sujet :  
 [Une première application avec Node.js](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js/une-premiere-application-avec-node-js)
