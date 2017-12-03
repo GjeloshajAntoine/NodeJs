@@ -64,7 +64,7 @@ d'accéder votre seveur web:
 server.listen(8080);
 ```
   
-Et voilà, Il ne nous reste plus qu'à la démarrer notre serveur via le terminal grâce à ligne de commande ci-dessous 
+Et voilà, Il ne nous reste plus qu'à démarrer notre serveur via le terminal grâce à ligne de commande ci-dessous 
 et à admirer notre magnifique message "hello world" à l'adresse suivante: http://localhost:8080
 
 ```
