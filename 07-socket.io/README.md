@@ -37,6 +37,7 @@
   ```
   var socket = io('http://localhost');
   ```
+  
   3.Messages
 
     Pour communiquer socketio utiliser des evenements,on peut d'un coté écouter un événement et le l'autre envoyer des messages à ces événements.
