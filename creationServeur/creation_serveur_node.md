@@ -95,5 +95,5 @@ server.listen(8080);
 
 ```
 
-Liens utile pour de plus amples informations concernant le sujet :  
+Lien utile pour de plus amples informations concernant le sujet :  
 [Une première application avec Node.js](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js/une-premiere-application-avec-node-js)
