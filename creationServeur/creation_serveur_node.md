@@ -4,7 +4,7 @@ Dans ce chapitre, nous allons apprendre à créer notre propre serveur web grâc
 du contenu à notre navigateur via les modules et méthodes que node nous propose. 
 
 
-## le module HTTP
+## Le module HTTP
 
 Pour commencer nous aurons besoin de créer un fichier nommé "server.js" et d'y inclure le module "http",
 qui nous donnera les outils nécessaires, pour communiquer avec le navigateur via le protocole HTTP (Hyper Text Transfer Protocol):  
@@ -13,7 +13,7 @@ qui nous donnera les outils nécessaires, pour communiquer avec le navigateur vi
 var http = require("http");
 ```
 
-## createServer
+## La méthode createServer
 
 Une fois le module "http" inclus dans notre fichier "server.js", nous aurons accès à la méthode
 "http.createServer()" qui comme son nom l'indique, nous permettra de créer notre serveur. Cette méthode
@@ -41,15 +41,15 @@ Et enfin "response.end()" viendra signifier la fin de notre réponse.
  response.writeHead(200, {"Content-Type": "text/html"});
  response.write(`
             <!doctype html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title>Document</title>
-        </head>
-        <body>
-        <p>hello world</p>
-        </body>
-        </html>
+            <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                  <title>Document</title>
+              </head>
+              <body>
+                <p>hello world</p>
+              </body>
+            </html>
     `);
     response.end();
 ```
@@ -69,8 +69,31 @@ et à admirer notre magnifique message "hello world" à l'adresse suivante: http
 
 ```
 node server.js
-```
+```  
 
+ le code complet :  
+```
+var http = require("http");
+var server = http.createServer(function (request, response) {
+    response.write(`
+            <!doctype html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>hello node</title>
+        </head>
+        <body>
+        
+        <p>Helooooow world</p>
+        </body>
+        </html>
+    `);
+    response.end();
+});
+
+server.listen(8080);
+
+```
 
 Liens utile pour de plus amples informations concernant le sujet :  
 [Une première application avec Node.js](https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js/une-premiere-application-avec-node-js)
