@@ -38,20 +38,21 @@ Ensuite "response.write()" va tout simplement, permettre de concevoir notre docu
 Et enfin "response.end()" viendra signifier la fin de notre réponse.  
 
 ```
- response.writeHead(200, {"Content-Type": "text/html"});
- response.write(`
-            <!doctype html>
-            <html lang="en">
-              <head>
-                <meta charset="UTF-8">
-                  <title>Document</title>
-              </head>
-              <body>
-                <p>hello world</p>
-              </body>
-            </html>
-    `);
-    response.end();
+response.writeHead(200, {"Content-Type": "text/html"});
+
+response.write(`
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>hello node</title>
+        </head>
+        <body>
+            <p>Helooooow world</p>
+        </body>
+    </html>
+`);
+response.end();
 ```
 
 ## La méthode listen
@@ -76,16 +77,15 @@ node server.js
 var http = require("http");
 var server = http.createServer(function (request, response) {
     response.write(`
-            <!doctype html>
+        <!doctype html>
         <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title>hello node</title>
-        </head>
-        <body>
-        
-        <p>Helooooow world</p>
-        </body>
+            <head>
+                <meta charset="UTF-8">
+                <title>hello node</title>
+            </head>
+            <body>
+                <p>Helooooow world</p>
+            </body>
         </html>
     `);
     response.end();
