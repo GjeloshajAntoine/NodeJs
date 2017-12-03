@@ -26,7 +26,7 @@ var server = http.createServer(function(request, response) {
 
 ## Les objets Request et Response
 
-L'objet "request" va nous fournir des informations concernant la requête client tel que son url, les en-têtes HTTP,...
+L'objet "request" va nous fournir des informations concernant la requête client tel que son url, les en-têtes HTTP,...  
 Tandis que l'objet "response" servira à retourner des données comme du texte, du html, un fichier,... 
 
 Le but étant de communiquer du contenu à notre navigateur, ici seul l'objet "response" et quelques-unes de ces méthodes vont nous intéresser.  
@@ -58,7 +58,7 @@ response.end();
 
 La dernière méthode appelée dans notre fichier sera "server.listen()", qui va lier notre serveur au port 
 de notre choix. Ici nous utilisons le port 8080 mais comme mentionné juste avant, libre à vous d'utiliser un autre port afin 
-d'accéder votre seveur web:  
+d'accéder à votre seveur web:  
 
 ```
 server.listen(8080);
