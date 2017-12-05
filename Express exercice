@@ -23,5 +23,5 @@ reprendre la structure du projet précédent afin de créer un site permettant l
 
 
 
-(int: utilisez le module "fs")
+(int: utilisez le module "fs", la methode write  et consulter la doc)
 
