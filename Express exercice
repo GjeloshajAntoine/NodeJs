@@ -19,9 +19,14 @@ reprendre la structure du projet précédent afin de créer un site permettant l
 
 - utiliser la page form afin de pouvoir récupérer les données envoyées par le formulaire dans un fichier json
 
-- utiliser la page commentaire pour récupérer et afficher les commentaires qui sont écrit dans le fichier json.
+- utiliser la page commentaire pour afficher les commentaires qui sont écrit dans le fichier json.
 
 
+(int: utilisez le module "fs")
 
-(int: utilisez le module "fs", la methode write  et consulter la doc)
+# exercice 3
+
+utilisez le module "ejs" pour afficher les commentaire contenu dans le fichier json dans un template (doit avoir l'extension .ejs) 
+
+(utilisez la doc)
 
